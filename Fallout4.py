@@ -73,7 +73,7 @@ Password Required''')
         if guess != password:
             print(">" + guess)
             print(">Entry denied")
-            print(">Likenesss=" + str(checkLike(guess, password)))
+            print(">Likeness=" + str(checkLike(guess, password)))
             attemptsLeft -= 1
             print(">Attempts remaining: " + str(attemptsLeft))
 
@@ -87,6 +87,7 @@ Password Required''')
 while True:
     access = start()
     if access:
+        time.sleep(3)
         exit()
     else:
         for x in range(5):
